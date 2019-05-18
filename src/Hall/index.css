@@ -1,0 +1,59 @@
+.containerHall {
+    width: 80%;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 20px 20px;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 0 0 rgba(47, 47, 47, 0.356);
+}
+
+.screen {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    padding: 10px;
+    border-bottom: 3px solid blue;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.info {
+    display: flex;
+    padding: 20px;
+}
+
+tbody {
+    border-spacing: 5px 20px;
+}
+
+.blue {
+    border: 1px solid rgb(93, 115, 241);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.close {
+    color: white;
+    background-color: gray;
+    border-color: black;
+    border-radius: 5px;
+    padding: 20px 10px;
+    margin: 5px;
+    /* height: 25px; */
+}
+
+.hall {
+    padding: 20px 20px;
+    border: 1px solid gray;
+}
+
+.open {
+    border: 1px solid rgb(93, 115, 241);
+    border-radius: 5px;
+    padding: 20px 10px;
+    margin: 5px;
+}
