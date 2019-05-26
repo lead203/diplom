@@ -1,5 +1,6 @@
 .containerFilter {
-    width: 40%;
+    width: 25%;
+    position: fixed;
 }
 
 .filter, .main {
@@ -7,6 +8,7 @@
     padding: 5px 20px;
     border: 1px solid gray;
     box-shadow: 5px 5px 0 0 rgba(47, 47, 47, 0.356);
+    background-color: white;
 }
 
 .filter {
@@ -52,6 +54,6 @@ select {
     padding: 10px 30px;
 }
 
-.booked {
+.bookedText {
     border-top: 1px solid black;
 }

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#root {
+    background: url('./assets/img/spot_light_bright_88110_1920x1080.jpg');
+}
+
+body {
+    margin: 0;
+}

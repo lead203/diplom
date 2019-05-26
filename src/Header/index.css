@@ -4,6 +4,7 @@
     border-radius: 10px;
     display: flex;
     padding: 10px;
+    background: white;
 }
 
 h1 {
@@ -11,8 +12,7 @@ h1 {
     align-items: center;
     text-transform: uppercase;
     font-size: 25px;
-    font-family: Geneva, Arial, Helvetica, sans-serif, cursive;
-    text-shadow: 1px 1px 2px gray, 0 0 1em gray;
+    font-family: fantasy;
 }
 
 .App-logo {

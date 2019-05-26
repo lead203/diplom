@@ -5,7 +5,7 @@ import './index.css'
 function Header() {
   return (
     <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <a href="/"><img src={logo} className="App-logo" alt="logo" /></a>
         <h1>Онлайн-бронирование</h1>
     </header>
   );

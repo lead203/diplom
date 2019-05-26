@@ -8,14 +8,15 @@ class Hall extends Component {
       <div className="containerHall">
         <div className="hall">
           <div className="screen">Экран</div>
-          <div className="row">
-            {this.props.state.plan.map((number, index) => 
+            <div className="row">
+            {this.props.seats.map((plan, index) => 
               <button 
                 key={index}
-                className={number.booked ? 'close' : 'open'}
+                id={this.props.id}
+                className={plan.booked ? 'close' : 'open'}
                 onClick={this.props.handleChange.bind(this, index)}
-                value={number.seat} >
-                {number.seat}
+                value={plan.seat} >
+                {plan.seat}
               </button>
             )}
           </div>
@@ -28,8 +29,12 @@ class Hall extends Component {
                 <th>-место занято</th>
               </tr>
               <tr>
-                <th className="blue"></th>
+                <th className="open"></th>
                 <th>-место свободно</th>
+              </tr>
+              <tr>
+                <th className="vip"></th>
+                <th>-VIP место</th>
               </tr>
             </tbody>
           </table>

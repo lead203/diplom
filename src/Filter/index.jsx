@@ -9,15 +9,15 @@ class Filter extends PureComponent {
         <div className="filter">
           <div>
             <p>Фильм</p>
-            <select onChange={this.props.handleChangeSelectName.bind(this)}>
+            <select value={this.props.state.name} onChange={this.props.handleChangeSelectName.bind(this)}>
               <option>-Выберите фильм-</option>
-              <option value="Покемоны">Покемоны</option>
-              <option value="Покемоны2">Покемоны2</option>
+              <option>Покемоны</option>
+              <option>Покемоны2</option>
             </select>
           </div>
           <div>
             <p>День</p>
-            <select onChange={this.props.handleChangeSelectDate.bind(this)}>
+            <select value={this.props.state.date} onChange={this.props.handleChangeSelectDate.bind(this)}>
               <option>-Выберите день-</option>
               <option>Понедельник</option>
               <option>Вторник</option>
@@ -41,9 +41,9 @@ class Filter extends PureComponent {
             <p>Зал</p>
             <select onChange={this.props.handleChangeSelectHall.bind(this)}>
               <option>-Выберите зал-</option>
-              <option>Красный</option>
-              <option>Белый</option>
-              <option>Желтый</option>
+              <option value="Красный">Красный</option>
+              <option value="Белый">Белый</option>
+              <option value="Желтый">Желтый</option>
             </select>
           </div>
           <div className="filter_footer">
@@ -54,7 +54,7 @@ class Filter extends PureComponent {
         <div className="main">
           <p><span>1</span>Выберите место.</p>
           <p><span>2</span>Нажмите "Бронировать".</p>
-          <div className="booked">
+          <div className="bookedText">
             {this.props.state.text.map((text, index) => 
               <p key={index}>{text}</p>
             )}
